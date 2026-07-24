@@ -1,59 +1,75 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🥐 Bakery House - Aplikasi Manajemen Bakery
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Bakery House** adalah aplikasi web manajemen toko bakery modern yang dirancang untuk mengelola produk, stok barang, serta transaksi secara efisien. Sistem ini dibangun menggunakan **Laravel 11** dan **Filament PHP** untuk menyediakan antarmuka panel admin yang intuitif dan responsif.
 
-## About Laravel
+Proyek ini dibuat untuk memenuhi tugas **Ujian Akhir Semester (UAS) - Pemrograman Web Lanjut**.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 👤 Identitas Mahasiswa
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* **Nama:** Monica Annisa Fitri
+* **NIM:** 230170143
+* **Mata Kuliah:** Pemrograman Web Lanjut
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🚀 Fitur Utama & Pembagian Hak Akses (Role)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Sistem ini menggunakan **Role-Based Access Control (RBAC)** untuk memisahkan hak akses:
 
-## Laravel Sponsors
+### 1. Hak Akses Admin
+* **Dashboard Statistik:** Ringkasan data produk, stok barang, dan total transaksi.
+* **Manajemen CRUD Produk/Barang:** Menambah, melihat, memperbarui, dan menghapus data bakery.
+* **Manajemen User:** Mengelola data pengguna dan hak akses sistem.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 2. Hak Akses User / Pelanggan
+* **Katalog Produk:** Melihat daftar pilihan roti dan kue yang tersedia.
+* **Pemesanan Online:** Melakukan pemesanan produk secara langsung.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🔑 Akun Demo (Demo Accounts)
 
-## Contributing
+Untuk mempermudah penilaian dan pengujian oleh Dosen, gunakan akun berikut untuk masuk ke sistem:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* **Akun Login:**
+  * **Email:** `monica@gmail.com`
+  * **Password:** `230170143`
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🛠️ Langkah Instalasi & Cara Menjalankan Aplikasi
 
-## Security Vulnerabilities
+Pastikan Anda memiliki **PHP (v8.2+)**, **Composer**, dan **Laragon / MySQL** yang sudah berjalan di sistem Anda.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
+### Dokumentasi Screenshot
 
-## License
+# 1. Halaman Login
+<img width="637" height="557" alt="image" src="https://github.com/user-attachments/assets/85f60c92-99f3-416c-add0-e49222938982" />
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 2. Dashboard
+<img width="1600" height="759" alt="image" src="https://github.com/user-attachments/assets/a209b615-237a-4bb6-9649-1bf509bade6e" />
+
+## 3.CRUD
+Halaman bagi admin untuk mengelola (Create,Read,Update,Delete) untuk bakery house
+<img width="1600" height="757" alt="image" src="https://github.com/user-attachments/assets/88a4f817-7942-4273-899a-b581b5646f73" />
+
+## 4.📡 Hasil Pengujian Proses REST API
+
+Berikut adalah hasil pengujian endpoint API (`GET /api/products`) yang berhasil mengambil seluruh data produk dari database:
+<img width="643" height="851" alt="image" src="https://github.com/user-attachments/assets/514c6be4-d569-484b-9a18-012a494aced9" />
+
+## 5. Halaman Login Mobile
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/23bd5974-8dcd-4ea8-ba09-5c7b6ff67fd7" />
+
+## 6. Dashboard Mobile
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/69fb43df-3816-4f25-b00d-e2031da83bcd" />
+
+## 7. CRUD Mobile
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/24526dee-e5e5-4db4-a142-a7402f5f419b" />
+
+### Clone Repository
+git clone https://github.com/monica110705/bakery-house-app.git
+cd bakery-house-app
